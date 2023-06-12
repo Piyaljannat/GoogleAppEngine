@@ -3,7 +3,7 @@ from flask import Flask, jsonify
 app = Flask(__name__)
 
 @app.route('/generateEvenNumbers', methods=['GET', 'POST'])
-def generateEvenNumbers(n):
+def generateEvenNumbers():
     #numbers = [i for i in range(2, 2*n + 1, 2)]
     #return jsonify(numbers)
     if request.method == 'POST':
